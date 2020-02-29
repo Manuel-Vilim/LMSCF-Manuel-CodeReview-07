@@ -1,0 +1,30 @@
+.Part {
+    align-content: center;
+}
+
+img {
+    width: 250px;
+    height: 230px;
+}
+.tourp{
+    max-width: 300px;
+    margin: auto;
+    background-color: grey;
+	 opacity: 0.9;
+	 margin-bottom: 5%;
+	 text-align: center;
+	 }
+hr{
+	border: 2px solid black;
+	width: 80%
+}
+.tourp:hover{
+	background: #2E9AFE;
+	color: white;
+	border-radius: 20px
+}
+.Part {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    }

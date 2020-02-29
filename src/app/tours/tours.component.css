@@ -1,0 +1,40 @@
+.Part {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+img {
+    width: 280px;
+    height: 230px;
+}
+
+
+.head {
+	color: white;
+	background-color: #2E9AFE;
+	border-radius: 20px;
+	padding: 1%;
+}
+
+a {
+    color: white;
+}
+.tour{
+    max-width: 300px;
+    margin: auto;
+    background-color: grey;
+	 opacity: 0.9;
+	 margin-bottom: 20%;
+	 padding: 3%
+}
+hr{
+	border: 2px solid black;
+	width: 80%
+}
+.tour:hover{
+	background: #2E9AFE;
+	color: white;
+	border-radius: 20px
+}

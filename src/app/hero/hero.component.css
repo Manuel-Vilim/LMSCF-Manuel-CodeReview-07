@@ -1,0 +1,33 @@
+#bcolorg {
+	background-color: lightgray;
+	 opacity: 0.9;
+	 color: black;
+	
+}
+#bcolorg:hover{
+	background-color: green;
+	color: white;
+	border-radius: 20px
+}
+#bcolorw {
+	background-color: lightgray;
+	 opacity: 0.9;
+	 color: black;
+	
+}
+#bcolorw:hover{
+	background-color: white;
+	color: blue;
+	border-radius: 20px
+}
+#bcolord {
+	background-color: lightgray;
+	 opacity: 0.9;
+	 color: black;
+	
+}
+#bcolord:hover{
+	background-color: black;
+	color: orange;
+	border-radius: 20px
+}

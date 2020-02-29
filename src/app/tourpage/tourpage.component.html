@@ -1,0 +1,18 @@
+<hr>
+<div class="Part">
+
+    <div class="tourp" *ngIf="product">
+        <h3>{{ product.name }}</h3>
+        <img src="{{ product.img }}">
+        <h4>{{ product.price | currency }}</h4>
+        <p>{{ product.description }}</p>
+
+        <button (click)="addToCart(product)" routerLink="/cart">Buy</button>
+        <br> <br>
+    </div>
+</div>
+<div class="container m-1 text-center">
+	
+
+    <button class='btn btn-outline-primary bg-warning my-2 my-sm-0' routerLink='/tours'>Back to vacations</button>
+</div>

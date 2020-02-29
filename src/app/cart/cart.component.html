@@ -1,0 +1,42 @@
+<h3> Cart
+</h3>
+
+<div class="cart-item" *ngFor="let item of items; index as i">
+    <span>{{ item.name }} </span>
+    <span>{{ item.price | currency }}</span><br>
+    <span> {{item.quantity}}</span>
+    <span> Total {{item.total}}</span>
+    <button class="w3-button w3-circle w3-black" (click)="plus(i)"> +</button>
+
+    <button class="w3-button w3-circle w3-teal" (click)="minus(i)">  -</button>
+
+    <button class="w3-button w3-circle w3-red" (click)="removeItem(i)">  X</button>
+
+</div>
+<br>
+<div class="cart-item">
+</div>
+
+<p class="btn btn-warning" (click)="total()">Your total is <br> hiding in the console! </p>
+
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+    <div>
+        <label for="name">
+          Full Name:
+        </label>
+        <input id="name" type="text" formControlName="name">
+    </div>
+
+    <div>
+        <label for="address">
+          Address:
+        </label>
+        <input id="address" type="text" formControlName="address">
+    </div>
+
+
+    <button class="button" type="submit">Purchase</button>
+
+</form>
+<br> <br>
+<button class='btn btn-outline-primary my-2 my-sm-0' routerLink='/traveldetails'>Back to Vacations</button>
