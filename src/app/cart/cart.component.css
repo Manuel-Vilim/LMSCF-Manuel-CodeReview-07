@@ -1,0 +1,22 @@
+.cartc {
+ max-width: 300px;
+    margin: auto;
+    background-color: grey;
+	 opacity: 0.9;
+	 margin-bottom: 5%;
+	 text-align: center;
+	 padding: 2%;
+}
+
+   
+	
+hr{
+	border: 2px solid black;
+	width: 80%
+
+}
+.cartc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    }
