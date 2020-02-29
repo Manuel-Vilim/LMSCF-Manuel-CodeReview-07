@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';import { CartService } from '../cart.service';
+import { Component, OnInit } from '@angular/core';
+import { CartService } from '../cart.service';
 import { FormBuilder } from '@angular/forms';
 
 @Component({
-  selector: 'cart-us',
+  selector: 'cart',
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']
 })
@@ -63,7 +64,7 @@ export class CartComponent implements OnInit {
         let total = 0;
         for (let i of this.items) {
           total += i.total;
-          console.log(total);
+          (total);
         }
       }
   }

@@ -1,12 +1,12 @@
 <hr>
-<div class="cartc">
+
     
 
-<div class="cart-item" *ngFor="let product of products; index as i">
-    <span>{{ product.name }} </span>
-    <span>{{ product.price | currency }}</span><br>
-    <span> {{product.quantity}}</span>
-    <span> Total {{product.total}}</span>
+<div class="cart-items" *ngFor="let items of items; index as i">
+    <span>{{ items.name }} </span>
+    <span>{{ items.price | currency }}</span><br>
+    <span> {{items.quantity}}</span>
+    <span> Total {{items.total}}</span>
     <button class="w3-button w3-circle w3-black" (click)="plus(i)"> +</button>
 
     <button class="w3-button w3-circle w3-teal" (click)="minus(i)">  -</button>
@@ -14,11 +14,12 @@
     <button class="w3-button w3-circle w3-red" (click)="removeItem(i)">  X</button>
 
 </div>
+<div class="cartc">
 <br>
-<div class="cart-item">
+<div class="cart-items">
 </div>
 
-<p class="btn btn-warning mr-3" (click)="total()">Your total is <br> hiding in the console! </p>
+<p class="btn btn-warning mr-5" (click)="total()"> Total Amount</p>
 
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
     <div>
