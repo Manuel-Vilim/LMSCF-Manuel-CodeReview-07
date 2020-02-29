@@ -2,11 +2,11 @@
 <div class="cartc">
     
 
-<div class="cart-item" *ngFor="let item of items; index as i">
-    <span>{{ item.name }} </span>
-    <span>{{ item.price | currency }}</span><br>
-    <span> {{item.quantity}}</span>
-    <span> Total {{item.total}}</span>
+<div class="cart-item" *ngFor="let product of products; index as i">
+    <span>{{ product.name }} </span>
+    <span>{{ product.price | currency }}</span><br>
+    <span> {{product.quantity}}</span>
+    <span> Total {{product.total}}</span>
     <button class="w3-button w3-circle w3-black" (click)="plus(i)"> +</button>
 
     <button class="w3-button w3-circle w3-teal" (click)="minus(i)">  -</button>
